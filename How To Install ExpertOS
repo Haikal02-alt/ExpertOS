@@ -72,6 +72,9 @@
    sudo cp /usr/share/pixmaps/expertos-logo.png /usr/share/plymouth/themes/joy/debian_logo.png
    sudo cp /usr/share/pixmaps/expertos-logo.png /usr/share/plymouth/themes/joy/debian_logo16.png
    Then sudo update-initramfs -u
+12 Install Copilot (Recommended)
+   Run sudo snap install copilot-desktop
+   Then Add To Panel Then Move Copilot To positioned directly before the file manager icon
 
-12 Have Fun And Start Using ExpertOS Then You Can Say I USE ExpertOS BTW
+13 Have Fun And Start Using ExpertOS Then You Can Say I USE ExpertOS BTW
    
