@@ -1,0 +1,67 @@
+1 Download Ubuntu Server Iso From https://ubuntu.com/download/server
+2 Select Ubuntu Server Iso You Want LTS Or Interim (LTS Is Recommended)
+3 Setup Ubuntu Server
+4 run sudo nano /etc/default/grub then add quiet on GRUB_CMDLINE_LINUX_DEFAULT Then sudo update-grub
+5 Run sudo nano /etc/issue then change Ubuntu And Its Version To ExpertOS
+  Run sudo nano /etc/issue.net Also Change Ubuntu And Its Version To ExpertOS
+6 Run sudo nano /etc/os-release
+  Change PRETTY_NAME="Ubuntu And Its Version" To PRETTY_NAME="ExpertOS"
+  Change NAME="Ubuntu" To NAME"ExpertOS"
+  Change VERSION_ID="Ubuntu Version" To VERSION_ID=""
+  Change VERSION="Ubuntu Version" To VERSION=""
+  Change VERSION_CODENAME=ubuntu codename to VERSION_CODENAME=
+  Change ID=ubuntu to ID=expertos
+  Change HOME_URL="https://ubuntu.com/" To HOME_URL="https://github.com/Haikal02-alt/ExpertOS"
+7 Update initramfs with sudo update-initramfs -u sudo update-grub and sudo apt update && sudo apt upgrade -y
+8 Show Grub Menu (If You Need It)
+  Run sudo nano /etc/default/grub
+  Then
+  GRUB_TIMEOUT_STYLE=menu
+  GRUB_TIMEOUT=5
+  Then sudo update-grub
+9 Run sudo nano /etc/grub.d/10_linux
+  Then Change OS=GNU/Linux To OS=
+  Also Change OS="${GRUB_DISTRIBUTOR} GNU/Linux"
+  To OS="${GRUB_DISTRIBUTOR}"
+  Then sudo update-grub
+10 Install A Graphical Environment (If You Need It)
+   1 Install Cinnamon Its Default Desktop Environment For ExpertOS sudo apt install cinnamon -y
+   2 sudo systemctl enable lightdm
+     sudo systemctl start lightdm
+   3 Change Debian Wallpaper To Default Adwaita Background By Click Right Mouse Then Change Desktop Background Then Change It To Adwaita Then Select Adwaita Wallpaper
+   After You Install A Graphical Environment
+   Install konqueror with sudo apt install konqueror
+   Open Konqueror Then Go To https://github.com/Haikal02-alt/ExpertOS
+   Then Download ExpertOS Logo In readme then rename 544848239-19e7fa44-d470-4fc8-81b8-2ff8783859a7.png To expertos-logo.png Then Save It To Downloads
+   Then Run sudo mv /home/yourusername/Downloads/expertos-logo.png /usr/share/pixmaps
+   Then sudo cp /usr/share/pixmaps/expertos-logo.png /usr/share/pixmaps/ubuntu-logo.svg
+   Then sudo cp /usr/share/pixmaps/expertos-logo.png /usr/share/pixmaps/ubuntu-logo-text.png
+   Then sudo cp /usr/share/pixmaps/expertos-logo.png /usr/share/pixmaps/ubuntu-logo-text-dark.png
+   Then sudo cp /usr/share/pixmaps/expertos-logo.png /usr/share/pixmaps/debian-logo.png
+   Then sudo cp /usr/share/pixmaps/expertos-logo.png /usr/share/pixmaps/debian-security.png
+   Then Enable System Sounds By Clicking Enable On Sounds Open Sounds
+   Then Set Cinnamon Login To Changing The Sound Volume On Then Add sound With freedesktop then stereo then select sounds
+   servive-login.oga
+   -Starting Cinnamon
+   servive-logout.oga
+   -Leaving Cinnamon
+   windows-attention.oga
+   -Switching Workspace
+   -Opening new windows
+   -Closing windows
+   -Minimizing windows
+   -Maximizing windows
+   -Unmaximizing windows
+   -Tiling and snapping windows
+   -device-added.oga
+   Inserting a device
+   device-removed.oga
+   -Removing a device
+   message.oga
+   -Showing notifications
+   audio-volume-change.oga
+   -Changing the sound volume
+   Go To Menu Then On Appearance Click Use a custom icon and label
+
+11 Have Fun And Start Using ExpertOS Then You Can Say I USE ExpertOS BTW
+   
