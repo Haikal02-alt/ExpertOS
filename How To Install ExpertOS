@@ -1,10 +1,9 @@
 1 Download Ubuntu Server Iso From https://ubuntu.com/download/server
 2 Select Ubuntu Server Iso You Want LTS Or Interim (LTS Is Recommended)
 3 Setup Ubuntu Server
-4 run sudo nano /etc/default/grub then add quiet on GRUB_CMDLINE_LINUX_DEFAULT Then sudo update-grub
-5 Run sudo nano /etc/issue then change Ubuntu And Its Version To ExpertOS
+4 Run sudo nano /etc/issue then change Ubuntu And Its Version To ExpertOS
   Run sudo nano /etc/issue.net Also Change Ubuntu And Its Version To ExpertOS
-6 Run sudo nano /etc/os-release
+5 Run sudo nano /etc/os-release
   Change PRETTY_NAME="Ubuntu And Its Version" To PRETTY_NAME="ExpertOS"
   Change NAME="Ubuntu" To NAME"ExpertOS"
   Change VERSION_ID="Ubuntu Version" To VERSION_ID=""
@@ -12,19 +11,19 @@
   Change VERSION_CODENAME=ubuntu codename to VERSION_CODENAME=
   Change ID=ubuntu to ID=expertos
   Change HOME_URL="https://ubuntu.com/" To HOME_URL="https://github.com/Haikal02-alt/ExpertOS"
-7 Update initramfs with sudo update-initramfs -u sudo update-grub and sudo apt update && sudo apt upgrade -y
-8 Show Grub Menu (If You Need It)
+6 Update initramfs with sudo update-initramfs -u sudo update-grub and sudo apt update && sudo apt upgrade -y
+7 Show Grub Menu (If You Need It)
   Run sudo nano /etc/default/grub
   Then
   GRUB_TIMEOUT_STYLE=menu
   GRUB_TIMEOUT=5
   Then sudo update-grub
-9 Run sudo nano /etc/grub.d/10_linux
+8 Run sudo nano /etc/grub.d/10_linux
   Then Change OS=GNU/Linux To OS=
   Also Change OS="${GRUB_DISTRIBUTOR} GNU/Linux"
   To OS="${GRUB_DISTRIBUTOR}"
   Then sudo update-grub
-10 Install A Graphical Environment (If You Need It)
+9 Install A Graphical Environment (If You Need It)
    1 Install Cinnamon Its Default Desktop Environment For ExpertOS sudo apt install cinnamon -y
    2 sudo systemctl enable lightdm
      sudo systemctl start lightdm
@@ -62,7 +61,7 @@
    audio-volume-change.oga
    -Changing the sound volume
    Go To Menu Then On Appearance Click Use a custom icon and label
-11 Setting A Plymouth Theme (Graphical Environment Only)
+10 Setting A Plymouth Theme (Graphical Environment Only)
    if plymouth isnt installed run sudo apt install plymouth plymouth-themes
    then sudo nano /etc/default/grub then add quiet splash or change quiet to quiet splash then sudo update-grub
    sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/joy/joy.plymouth 100
@@ -72,9 +71,9 @@
    sudo cp /usr/share/pixmaps/expertos-logo.png /usr/share/plymouth/themes/joy/debian_logo.png
    sudo cp /usr/share/pixmaps/expertos-logo.png /usr/share/plymouth/themes/joy/debian_logo16.png
    Then sudo update-initramfs -u
-12 Install Copilot (Recommended)
+11 Install Copilot (Recommended)
    Run sudo snap install copilot-desktop
    Then Add To Panel Then Move Copilot To positioned directly before the file manager icon
 
-13 Have Fun And Start Using ExpertOS Then You Can Say I USE ExpertOS BTW
+12 Have Fun And Start Using ExpertOS Then You Can Say I USE ExpertOS BTW
    
