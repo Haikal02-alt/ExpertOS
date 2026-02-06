@@ -19,11 +19,12 @@
   GRUB_TIMEOUT=5
   Then sudo update-grub
 8 Run sudo nano /etc/grub.d/10_linux
+  GRUB_DISABLE_SUBMENU="false"
   Then Change OS=GNU/Linux To OS=
   Also Change OS="${GRUB_DISTRIBUTOR} GNU/Linux"
   To OS="${GRUB_DISTRIBUTOR}"
   Then sudo update-grub
-9 Install A Graphical Environment (If You Need It)
+9 Install A Graphical Environment
    1 Install Cinnamon Its Default Desktop Environment For ExpertOS sudo apt install cinnamon -y
    2 sudo systemctl enable lightdm
      sudo systemctl start lightdm
