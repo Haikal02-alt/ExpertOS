@@ -45,7 +45,8 @@
    -Starting Cinnamon
    servive-logout.oga
    -Leaving Cinnamon
-   windows-attention.oga
+   
+    windows-attention.oga
    -Switching Workspace
    -Opening new windows
    -Closing windows
@@ -53,12 +54,15 @@
    -Maximizing windows
    -Unmaximizing windows
    -Tiling and snapping windows
+   
    -device-added.oga
    Inserting a device
    device-removed.oga
    -Removing a device
+   
    message.oga
    -Showing notifications
+   
    audio-volume-change.oga
    -Changing the sound volume
    Go To Menu Then On Appearance Click Use a custom icon and label
