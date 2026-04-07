@@ -8,6 +8,8 @@ ExpertOS Is Based On Ubuntu But In Proposed Thing It Was Based On Linux Mint Wit
 ExpertOS Is A Simple Lightweight Linux Distribution
 ExpertOS Doesnt Need Iso You Started On Ubuntu Server Iso Then Configure It Yourself
 
+(THIS PROJECT IS DISCONTINUED ON APRIL 7 2026 BECAUSE EXPERTOS BACK THEN TRIAXIS GNU/LINUX USED TO NAMED EXPERTOS THEN ON JANUARY 8 2026 IT WAS RENAMED EXPERTOS TO TRIAXIS GNU/LINUX)
+
 Previews
 
 Login Screen Preview
